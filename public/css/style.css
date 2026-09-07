@@ -1,0 +1,82 @@
+/* Additional custom styles that are complex for Tailwind utilities */
+
+/* Envelope closing shape effect */
+#envelope-overlay {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+}
+
+#envelope-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+}
+
+/* Custom styling for photo frames */
+.photo-frame {
+    position: relative;
+    padding: 8px;
+    background-color: rgb(113, 107, 220);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo-frame::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    /* wedding-gold with opacity */
+    pointer-events: none;
+}
+
+/* Smooth scrolling override */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom radio button styles are handled via Tailwind peer classes in HTML, but here we can add any fallback if needed */
+
+/* Animation des pétales */
+.petal {
+    position: absolute;
+    top: -20px;
+    border-radius: 0 50% 50% 50%;
+    /* Forme de pétale/goutte */
+    box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.1);
+    animation: fall linear forwards;
+    transform-origin: center;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-20px) rotate(0deg) translateX(0) scale(0.5);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateY(50vh) rotate(360deg) translateX(80px) scale(1);
+        opacity: 0;
+    }
+}
+
+.bg-wedding-card {
+    background-image: url('../nouveau-fond-1.png');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
