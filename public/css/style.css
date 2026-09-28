@@ -76,7 +76,7 @@ html {
 }
 
 .bg-wedding-card {
-    background-image: url('../nouveau-fond-1.png');
+    background-image: url('../card.png');
     background-repeat: repeat-y;
     background-size: 100% auto;
 }
