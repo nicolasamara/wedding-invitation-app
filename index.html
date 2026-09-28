@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -30,8 +30,6 @@
                         playfair: ['"Playfair Display"', 'serif'],
                         montserrat: ['Montserrat', 'sans-serif'],
                         parfumerie: ['"Parfumerie Script Text"', '"Pinyon Script"', 'cursive'],
-                        bogart: ['Bogart', 'serif'],
-                        cinzel: ['Cinzel', 'serif'],
                     }
                 }
             }
@@ -161,7 +159,7 @@
                             disent
                             OUI</p>
 
-                        <p class="font-cinzel font-bold text-2xl text-themeBlue drop-shadow-sm my-4 tracking-wider">Kribi - 12
+                        <p class="font-playfair font-bold text-2xl text-themeBlue drop-shadow-sm my-4">Kribi - 12
                             Décembre 2026</p>
 
                         <h3 class="font-playfair text-sm font-bold text-themeBlue uppercase tracking-wider mb-2 mt-3">Il
@@ -218,7 +216,7 @@
                     </div>
                     <span class="text-[9px] font-bold uppercase tracking-wider text-themeBlue">Localisation</span>
                 </a>
-                <a href="#contacts" class="overlay-nav-link flex flex-col items-center gap-2 group">
+                <a href="https://wa.me/237659240382" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 group">
                     <div
                         class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-softBlue group-hover:bg-softBlue group-hover:text-white transition-colors">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -277,7 +275,7 @@
                     </div>
                     <span class="text-[9px] font-bold uppercase tracking-wider text-themeBlue">Localisation</span>
                 </a>
-                <a href="#contacts" class="overlay-nav-link flex flex-col items-center gap-2 group">
+                <a href="https://wa.me/237659240382" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 group">
                     <div
                         class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-softBlue group-hover:bg-softBlue group-hover:text-white transition-colors">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -300,107 +298,36 @@
                 <div class="title-banner cascade-item" data-delay="0">Programme</div>
 
                 <div class="max-w-xs mx-auto">
-                    <!-- Matin -->
-                    <div class="bg-bgBlue rounded-t-[2.5rem] p-8 border border-softBlue/20 shadow-sm relative cascade-item"
+                    <!-- Cérémonie Unique -->
+                    <div class="rounded-[2.5rem] p-8 border border-softBlue/20 shadow-sm relative overflow-hidden cascade-item"
                         data-delay="150">
-                        <!-- Icon placeholder -->
-                        <div class="w-12 h-12 bg-white rounded-full mx-auto flex items-center justify-center mb-4 text-softBlue shadow-sm cascade-item"
-                            data-delay="250">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
+                        <!-- Image de fond avec overlay pour la lisibilité -->
+                        <div class="absolute inset-0 z-0">
+                            <img src="mariage-table.jpeg" alt="Cérémonie" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-bgBlue/75"></div>
                         </div>
 
-                        <div class="mb-6 cascade-item" data-delay="350">
-                            <p class="font-pinyon text-2xl text-themeBlue">Civilité</p>
-                            <p class="font-playfair font-bold text-xl text-themeBlue tracking-widest">09H00</p>
-                        </div>
-
-                        <div class="cascade-item" data-delay="450">
-                            <p class="font-pinyon text-2xl text-themeBlue">Brunch</p>
-                            <p class="font-playfair font-bold text-xl text-themeBlue tracking-widest">11H30</p>
-                        </div>
-
-                        <div class="cascade-item" data-delay="550">
-                            <p class="text-[10px] uppercase font-bold text-softBlue tracking-widest mt-6">Style
-                                vestimentaire class</p>
-                            <p class="text-[9px] text-themeBlue/60 mt-1">Vous pourrez vous changer<br>pour la soirée
-                                plus
-                                relax.</p>
-                        </div>
-                    </div>
-
-                    <!-- Soir -->
-                    <div class="bg-pastelPink rounded-b-[2.5rem] p-8 border border-pink-200/40 shadow-sm mt-1 relative overflow-hidden cascade-item"
-                        data-delay="650">
-                        <div class="w-12 h-12 bg-white rounded-full mx-auto flex items-center justify-center mb-4 text-rose-400 shadow-sm cascade-item"
-                            data-delay="750">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                </path>
-                            </svg>
-                        </div>
-
-                        <div class="mb-6 cascade-item" data-delay="850">
-                            <p class="font-pinyon text-2xl text-rose-900">Dot</p>
-                            <p class="font-playfair font-bold text-xl text-rose-900 tracking-widest">16H00</p>
-                        </div>
-
-                        <div class="cascade-item" data-delay="950">
-                            <p class="font-pinyon text-2xl text-rose-900">Réjouissances</p>
-                            <p class="font-playfair font-bold text-xl text-rose-900 tracking-widest">19H00</p>
-                        </div>
-
-                        <div class="cascade-item" data-delay="1050">
-                            <p class="text-[10px] uppercase font-bold text-rose-400 tracking-widest mt-6">Style
-                                vestimentaire africain</p>
-
-                            <!-- Color Palette -->
-                            <div class="flex justify-center gap-2 mt-4">
-                                <div class="w-5 h-5 rounded-full bg-red-900 border border-white/50 shadow-sm"></div>
-                                <div class="w-5 h-5 rounded-full bg-black border border-white/50 shadow-sm"></div>
-                                <div class="w-5 h-5 rounded-full bg-yellow-600 border border-white/50 shadow-sm"></div>
+                        <!-- Contenu -->
+                        <div class="relative z-10 py-6">
+                            <!-- Icon placeholder -->
+                            <div class="w-12 h-12 bg-white rounded-full mx-auto flex items-center justify-center mb-6 text-softBlue shadow-sm cascade-item"
+                                data-delay="250">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
                             </div>
-                        </div>
+
+                            <div class="cascade-item" data-delay="350">
+                                <p class="font-pinyon text-4xl text-themeBlue mb-2">Mariage Civil</p>
+                                <p class="font-playfair font-bold text-2xl text-themeBlue tracking-widest">15H30</p>
+                            </div>
+                        </div> <!-- Fermeture du relative z-10 -->
                     </div>
                 </div>
             </section>
 
-            <!-- 6. Modèles Inspirations -->
-            <section class="py-10 px-4">
-                <h3 class="font-playfair text-xl font-bold text-center text-themeBlue mb-6 tracking-wide border-y border-softBlue/30 py-2 w-max mx-auto px-4 cascade-item"
-                    data-delay="0">MODÈLES INSPIRATION</h3>
 
-                <!-- Grid matching the video style -->
-                <div class="grid grid-cols-3 gap-2 px-2">
-                    <img src="https://images.unsplash.com/photo-1594938291221-94f18cbb5660?auto=format&fit=crop&q=80&w=200"
-                        alt="Insp 1"
-                        class="w-full h-32 object-cover rounded-md shadow-sm border border-white cascade-item"
-                        data-delay="100">
-                    <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&q=80&w=200"
-                        alt="Insp 2"
-                        class="w-full h-32 object-cover rounded-md shadow-sm border border-white cascade-item"
-                        data-delay="200">
-                    <img src="https://images.unsplash.com/photo-1572804013309-82a891485720?auto=format&fit=crop&q=80&w=200"
-                        alt="Insp 3"
-                        class="w-full h-32 object-cover rounded-md shadow-sm border border-white cascade-item"
-                        data-delay="300">
-                    <img src="https://images.unsplash.com/photo-1608234808654-2a8875faa7fd?auto=format&fit=crop&q=80&w=200"
-                        alt="Insp 4"
-                        class="w-full h-32 object-cover rounded-md shadow-sm border border-white cascade-item"
-                        data-delay="400">
-                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=200"
-                        alt="Insp 5"
-                        class="w-full h-32 object-cover rounded-md shadow-sm border border-white cascade-item"
-                        data-delay="500">
-                    <img src="https://images.unsplash.com/photo-1550639524-a6f58345a278?auto=format&fit=crop&q=80&w=200"
-                        alt="Insp 6"
-                        class="w-full h-32 object-cover rounded-md shadow-sm border border-white cascade-item"
-                        data-delay="600">
-                </div>
-            </section>
 
             <!-- 7. Localisation -->
             <section id="localisation" class="py-12 px-6 text-center">
@@ -414,12 +341,12 @@
 
                 <p class="text-xs font-bold text-themeBlue uppercase tracking-widest leading-loose mb-6 cascade-item"
                     data-delay="150">
-                    Toutes les cérémonies se<br>
-                    déroulent au domicile familial sis à Kribi<br>
+                    La cérémonie se déroulera à<br>
+                    La plage de la Costa Blanca (Kribi)<br>
 
                 </p>
 
-                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.google.com/maps/search/Kribi+Beach" target="_blank" rel="noopener noreferrer"
                     class="inline-flex items-center gap-2 border-2 border-softBlue text-themeBlue font-bold uppercase text-xs tracking-widest px-6 py-3 rounded hover:bg-softBlue hover:text-white transition-colors cascade-item"
                     data-delay="300">
                     <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 24 24">
